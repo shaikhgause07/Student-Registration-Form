@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form </title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body bgcolor="lightpink">
     <center>
@@ -123,25 +124,57 @@
     <input type="checkbox" id="others" name="hobbies" value="others">
     <input type="text"><br><br><br><br>
     <label for="qualification">Qualification:  </label>
-    <table border="4">
+    <table border="1">
         <tr>
-    <th style="border: 2px solid black; padding: 10px;"><b>Sr.No</b></th>
-    <th style="border: 2px solid black; padding: 10px;"><b>Examination</b></th>
-    <th style="border: 2px solid black; padding: 10px;"><b>Board</b></th>
-    <th style="border: 2px solid black; padding: 10px;"><b>Percentage</b></th>
-    <th style="border: 2px solid black; padding: 10px;"><b>Year of Passing</b></th>
+            <th>SR.No</th>
+            <th>Examination</th>
+            <th>Board</th>
+            <th>Percentage</th>
+            <th>Year of Passing</th>
+        </tr>
 
-   </tr>
+        <tr>
+            <td>1</td>
+            <td>Class X</td>
+            <td><input type="text"></td>
+            <td><input type="number" step="0.01"></td>
+            <td><input type="number" step="0.01"></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Class XII</td>
+            <td><input type="text"></td>
+            <td><input type="number" step="0.01"></td>
+            <td><input type="number" step="0.01"></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Graduation</td>
+            <td><input type="text"></td>
+            <td><input type="number" step="0.01"></td>
+            <td><input type="number" step="0.01"></td>
+        </tr>
+
+        <td>4</td>
+        <td>Masters</td>
+        <td><input type="text"></td>
+        <td><input type="number" step="0.01"></td>
+        <td><input type="number" step="0.01"></td>
     </table>
    
+    <label >COURSE APPLIED FOR:</label>
+    <input type="radio" name="course">BCA
+    <input type="radio" name="course">B.com
+    <input type="radio" name="course">B.sc 
+    <input type="radio" name="course">B.A 
     
-
-
-
-       
+    <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
     </form>
-    
-    
-    
+
 </body>
 </html>
